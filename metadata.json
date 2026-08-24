@@ -1,0 +1,6 @@
+{
+  "name": "RUO TEA 植物茶間",
+  "description": "RUO TEA 植物茶間是一個精緻的植感素食茶館，結合傳統茶道藝術與精緻蔬食煲湯、手作茶點，營造禪意靜謐的空間體驗。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'HYFengShangHei_55W';
+  src: local('HYFengShangHei_55W'), local('HYFengShangHei-55W'), local('HYFengShangHei 55W'),
+       local('HYFengShangHei'), local('漢儀風尚黑 55W'), local('汉仪风尚黑 55W'),
+       local('漢儀風尚黑-55W'), local('汉仪风尚黑-55W'), local('漢儀風尚黑'), local('汉仪风尚黑');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "HYFengShangHei_55W", "HYFengShangHei-55W", "HYFengShangHei 55W", "HYFengShangHei", "漢儀風尚黑 55W", "汉仪风尚黑 55W", "漢儀風尚黑", "汉仪风尚黑", "PingFang TC", "PingFang SC", "PingFang HK", "Noto Sans TC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Plus Jakarta Sans", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "HYFengShangHei_55W", "HYFengShangHei-55W", "HYFengShangHei 55W", "HYFengShangHei", "漢儀風尚黑 55W", "汉仪风尚黑 55W", "漢儀風尚黑", "汉仪风尚黑", "PingFang TC", "PingFang SC", "PingFang HK", "Noto Sans TC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Plus Jakarta Sans", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "HYFengShangHei_55W", "HYFengShangHei-55W", "HYFengShangHei 55W", "HYFengShangHei", "漢儀風尚黑 55W", "汉仪风尚黑 55W", "漢儀風尚黑", "汉仪风尚黑", "PingFang TC", "PingFang SC", "PingFang HK", "Noto Sans TC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Plus Jakarta Sans", "Inter", ui-monospace, monospace;
+  
+  --color-brand-cream: #FAF9F5;
+  --color-brand-cream-dark: #F0EDE4;
+  --color-brand-dark: #1E2321;
+  --color-brand-dark-light: #343C3A;
+  --color-brand-blue: #83AEBD;
+  --color-brand-blue-light: #A0C5D2;
+  --color-brand-blue-dark: #6892A2;
+  --color-brand-sage: #B4C4B8;
+  --color-brand-clay: #C5A880;
+  --color-brand-border: #E6E4DE;
+}
+
+@layer base {
+  * {
+    font-family: var(--font-sans);
+  }
+  
+  body {
+    background-color: var(--color-brand-cream);
+    color: var(--color-brand-dark);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  
+  button, img, input, select, textarea {
+    border-radius: 20px;
+  }
+}
+
+/* Custom subtle styles */
+.serif-italic {
+  font-family: var(--font-sans);
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-blue);
+}
